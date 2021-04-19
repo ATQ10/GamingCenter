@@ -1,0 +1,67 @@
+<div id="instalaciones" class="px-5 pb-5 bg-secondary">
+    <div class="container">
+        <div class="fondo row show-grid">
+            <div class="info-client col-sm-12 col-md-8">
+                <div class="container-fluid">
+                    <h2>Solicitar membresía</h2>
+                    <div class="row show-grid">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="name">Su nombre:</label>
+                            <input type="text" id="name" class="form-control" placeholder="Por ejemplo: Arnoldo"  [(ngModel)]="nombre">
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="last-name">Su apellido:</label>
+                            <input type="text" id="last-name" class="form-control" placeholder="Por ejemplo: Tejeda"  [(ngModel)]="apellido">
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="email">Su email:</label>
+                            <input type="email" id="email" class="form-control" placeholder="Por ejemplo: ejemplo@gmail.com" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" [(ngModel)]="email">
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="tel">Su Teléfono:</label>
+                            <input type="tel" id="tel" class="form-control" placeholder="Por ejemplo: 3461046302"  [(ngModel)]="tel">
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="fecha">Su fecha de nacimiento:</label>
+                            <input type="date" id="fecha" class="form-control"  [(ngModel)]="fecha">
+                        </div>
+                        <div class="col-sm-12 col-md-12">
+                            <label for="cm">Descripción extra:</label>
+                            <input type="text" id="cm" class="form-control comment"  [(ngModel)]="descripcion">
+                        </div>
+                        <div class="col"></div>
+                        <div class="col-sm-12 col-md-2">
+                            <button type="submit" class="btn" id="limpiar" (click)="limpiar()">Limpiar</button>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-sm-12 col-md-2">
+                            <button type="submit" class="btn" id="reservar" (click)="validar()">Solicitar</button>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <div class="solicitud col-sm-12 col-md-4">
+                <div class="container-fluid">
+                    <h2>Mi solicitud...</h2>
+                    <div class="row show-grid">
+                        <div class="col-sm-12 col-md-12">
+                            <p>Nombre solicitante: {{nombre}} {{apellido}}</p>
+                        </div>
+                        <div class="col-sm-12 col-md-12">
+                            <p>Email: {{email}}</p>
+                        </div>
+                        <div class="col-sm-12 col-md-12">
+                            <p>Teléfono: {{tel}}</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <p>Fecha: {{fecha | date:'EEE, d of LLL of yyyy'}}</p>
+                        </div>
+                        <div class="col-sm-12 col-md-12">
+                            <p>Descripción extra: {{descripcion}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

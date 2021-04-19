@@ -1,0 +1,66 @@
+.fondo {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.info-client {
+    padding: 1em;
+    background-color: #292b2c;
+    color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.info-client h2 {
+    color: #28adeb;
+}
+
+.solicitud {
+    padding: 1em;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#reservar, #limpiar {
+    display: flex;
+    float: right;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #28adeb;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1em;
+}
+
+#reservar:hover, #limpiar:hover {
+    background-color: white;
+    color: #5057b3;
+}
+
+@media (max-width: 770px) {
+    .info-client {
+        border-radius: 15px 15px 0 0;
+    }
+    .solicitud  {
+        border-radius: 0 0 15px 15px;  
+    }
+
+    #reservar, #limpiar {
+        width: 100%;
+    }
+}

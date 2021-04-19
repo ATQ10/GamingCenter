@@ -1,0 +1,71 @@
+<div id="instalaciones" class="px-5 pb-5 bg-secondary">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center text-black text-shadow h1" style="color: white;">Bienvenid@s a Gaming Center</h2>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12">
+            <div class="row justify-content-md-center" *ngFor="let dato of datos;">
+              <div class="col p-1">
+                <!-- Card 1-->
+                <div class="card bg-{{dato[10]}} text-white">   
+                  <div class="row">
+                    <div class="col-md-6">
+                      <!-- Carrusel-->
+                      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item ">
+                            <img src="./assets/img/{{dato[0]}}" class="d-block w-100" alt="{{dato[3]}}">
+                          </div>
+                          <div class="carousel-item active">
+                            <img src="./assets/img/{{dato[1]}}" class="d-block w-100" alt="{{dato[3]}}">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/img/{{dato[2]}}" class="d-block w-100" alt="{{dato[3]}}">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title">{{dato[3]}}</h5>
+                        <p class="card-text">{{dato[4]}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col p-1">
+                <!-- Card 2-->
+                <div class="card bg-{{dato[11]}} text-white">   
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title">{{dato[8]}}</h5>
+                        <p class="card-text">{{dato[9]}}</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <!-- Carrusel-->
+                      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item ">
+                            <img src="./assets/img/{{dato[5]}}" class="d-block w-100" alt="{{dato[8]}}">
+                          </div>
+                          <div class="carousel-item active">
+                            <img src="./assets/img/{{dato[6]}}" class="d-block w-100" alt="{{dato[8]}}">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/img/{{dato[7]}}" class="d-block w-100" alt="{{dato[8]}}">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

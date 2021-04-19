@@ -1,0 +1,33 @@
+<div id="bienvenida">
+    <div class="container-md"> 
+      <div class="row pt-2">
+          <h3 class="text-center pt-4 h1">Galería
+          </h3>
+      </div>
+    </div>
+  </div> 
+  <div id="galeria">
+    <div class="container">
+      <div class="row show-grid">
+          <div *ngFor="let imagen of imagenes;" class="col-sm-6 col-lg-3 col-md-4 thumb">
+                <img src="{{imagen[0]}}" class="zoom img-fluid visualizar" alt="{{imagen[1]}}">     
+          </div>
+      </div>
+    </div>
+</div>
+<!--Modal que visualiza las imágenes-->
+<div class="modal fade" role="dialog" id="imgmodal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel" style="color: white;">Visualizador</h5>
+                <button id="close" type="button" class="fa fa-window-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid" src="" id="show-img">
+                <br><br>
+                <p id="desc-img" style="color: white;"></p>         
+            </div>          
+        </div>
+    </div>
+  </div>  

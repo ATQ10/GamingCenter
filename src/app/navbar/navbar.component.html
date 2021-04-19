@@ -1,0 +1,47 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="navbar">
+    <div class="container-fluid">
+        
+        <!-- Nombre de proyecto -->
+        <H3 class="d-none d-lg-block" style="color: white;">
+            <B>
+              Gaming Center
+            </B> 
+          </H3>
+      <!-- Logotipo -->
+      <a class="navbar-brand" href="#">
+        <img class="rounded-lg" src="./assets/img/logo.png" alt="Logotipo de Gaming Center" height="50">
+      </a>  
+        <!-- Botón de menu responsivo -->
+        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Lista de links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" routerLink="" routerLinkActive="active"><span class="direcciones">Inicio</span></a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/videojuegos-component" routerLinkActive="active"><span class="direcciones">Videojuegos</span></a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/test-component" routerLinkActive="active"><span class="direcciones">Test</span></a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/membresia-component" routerLinkActive="active"><span class="direcciones">Membresía</span></a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/galeria-component" routerLinkActive="active"><span class="direcciones">Galería</span></a></li>
+                <li class="nav-item"><a class="nav-link" href=".contacto"><span class="direcciones">Contacto</span></a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <!--Modal que visualiza las imágenes-->
+<div class="modal fade" role="dialog" id="imgmodal">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-dark">
+          <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel" style="color: white;">Visualizador</h5>
+              <button id="close" type="button" class="fa fa-window-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img class="img-fluid" src="" id="show-img">
+              <br><br>
+              <p id="desc-img" style="color: white;"></p>         
+          </div>          
+      </div>
+  </div>
+</div>  

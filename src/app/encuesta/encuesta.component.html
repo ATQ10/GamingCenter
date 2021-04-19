@@ -1,0 +1,22 @@
+<div id="instalaciones" class="px-5 pb-5 bg-secondary">
+    <div class="container">
+        <h1 style="color: white;">Test de Videojuegos</h1>
+        <span class="cal"><h2>{{calificacion}}</h2></span>
+        <div class="pregunta bg-{{estado[i]}}" *ngFor="let cuestion of pregunta;let i = index">
+            <span class="preg" style="color: white;">{{ i+1 }}) ¿{{cuestion[0]}}?</span><br>
+            <div class="opciones" *ngFor="let opcion of cuestion;let j = index">
+                <div class="opcion" *ngIf="j>0">
+                    <input type="radio" value="{{opcion}}" name="resp{{i}}" [(ngModel)]="eleccion[i]">
+                    <span style="color: white;">{{opcion}}</span>
+                </div>
+            </div>
+            <div class="seleccion">
+                <br>Usted ha seleccionado: {{eleccion[i]}}
+            </div>
+        </div>
+        <div class="revisar bg-dark">
+            <button (click)="cleanOptions(true)">Limpiar</button>
+            <button (click)="check()">Calificar</button>
+        </div>
+    </div>
+</div>

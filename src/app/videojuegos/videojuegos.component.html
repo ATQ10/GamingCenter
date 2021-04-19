@@ -1,0 +1,21 @@
+<div id="instalaciones" class="px-5 pb-5 bg-secondary">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center text-black text-shadow h1" style="color: white;">Videojuegos</h2>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12">
+            <div class="row" *ngFor="let i of lista;">
+                <div class="col-sm" *ngFor="let juego of juegos[i]">
+                    <div class="card w-100 card-border mb-5 bg-dark">
+                        <img src="./assets/img/{{juego[0]}}" class="card-img-top" alt="{{juego[1]}}">
+                        <div class="card-body">
+                          <p class="card-text" style="color: white;"><B>{{juego[1]}}:</B><br>{{juego[2]}}</p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</div>
